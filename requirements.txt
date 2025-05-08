@@ -1,0 +1,9 @@
+streamlit
+openai
+langchain
+PyMuPDF  # for PDF extraction
+pandas
+python-dotenv  # to manage secrets like your Azure key
+langchain-community 
+faiss-cpu 
+tiktoken
