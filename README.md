@@ -1,4 +1,4 @@
-# ITDB Fact‑Sheet Analyzer 📝
+# ITDB Fact‑Sheet Analyzer
 
 A **Streamlit** application that lets you _chat with_ IAEA ITDB fact‑sheet PDFs.
 Upload a sheet, extract structured JSON, ask free‑form questions, download CSV,
@@ -75,7 +75,7 @@ OPENAI_API_VERSION=2025-01-01-preview
 
 ---
 
-## 🚀 Deploy Options
+## Deploy Options
 
 | Platform | How |
 |----------|-----|
@@ -85,7 +85,7 @@ OPENAI_API_VERSION=2025-01-01-preview
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. **Fork** & create a feature branch  
 2. `pre‑commit install`  
@@ -93,6 +93,6 @@ OPENAI_API_VERSION=2025-01-01-preview
 
 ---
 
-## 📜 License
+##  License
 
 MIT
