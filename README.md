@@ -7,7 +7,7 @@ and visualise key metrics — all powered by **Azure OpenAI**, **LangChain**, a
 
 ---
 
-## ✨ Features & User Stories
+##  Features & User Stories
 
 | # | Capability | Key User Stories |
 |---|------------|-----------------|
@@ -20,7 +20,7 @@ and visualise key metrics — all powered by **Azure OpenAI**, **LangChain**, a
 
 ---
 
-## 🖥 Quick Start
+##  Quick Start
 
 ```bash
 # 1 · Clone
@@ -44,7 +44,7 @@ Visit **<http://localhost:8501>** in your browser.
 
 ---
 
-## 🔑 Environment Variables (.env)
+##  Environment Variables (.env)
 
 ```env
 # -------- Chat model (GPT‑4o mini) --------
