@@ -24,7 +24,7 @@ and visualise key metrics — all powered by **Azure OpenAI**, **LangChain**, a
 
 ```bash
 # 1 · Clone
-git clone https://github.com/your‑org/itdb_fact_sheet_analyzer.git
+ git clone https://github.com/ibrahim-shaban-qabaqebo/ITDB-Fact-Sheet-Analyzer.git
 cd itdb_fact_sheet_analyzer
 
 # 2 · Python ≥ 3.9 virtual env
