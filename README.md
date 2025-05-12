@@ -5,6 +5,9 @@ Upload a sheet, extract structured JSON, ask free‑form questions, download CSV
 and visualise key metrics — all powered by **Azure OpenAI**, **LangChain**, and
 **FAISS**.
 
+## UI Screenshots
+Below are selected screenshots that illustrate the core user flow of the ITDB Fact Sheet Analyzer. From uploading a fact sheet and previewing the PDF, to extracting structured data and interacting via natural language, these views demonstrate how the app supports both transparency and usability.
+
 <img width="1418" alt="Screenshot 2025-05-12 at 11 02 03" src="https://github.com/user-attachments/assets/0c8ef4dd-95cb-4451-9dcd-3320fe12cff9" />
 <img width="1418" alt="Screenshot 2025-05-12 at 11 02 38" src="https://github.com/user-attachments/assets/19a83df6-c026-4f57-a891-3c57622e7b4e" />
 <img width="1418" alt="Screenshot 2025-05-12 at 11 02 45" src="https://github.com/user-attachments/assets/5511c67f-209d-4852-bf0b-cd4d44230fd2" />
