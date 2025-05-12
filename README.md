@@ -5,6 +5,12 @@ Upload a sheet, extract structured JSON, ask free‑form questions, download CSV
 and visualise key metrics — all powered by **Azure OpenAI**, **LangChain**, and
 **FAISS**.
 
+<img width="1418" alt="Screenshot 2025-05-12 at 11 02 03" src="https://github.com/user-attachments/assets/0c8ef4dd-95cb-4451-9dcd-3320fe12cff9" />
+<img width="1418" alt="Screenshot 2025-05-12 at 11 02 38" src="https://github.com/user-attachments/assets/19a83df6-c026-4f57-a891-3c57622e7b4e" />
+<img width="1418" alt="Screenshot 2025-05-12 at 11 02 45" src="https://github.com/user-attachments/assets/5511c67f-209d-4852-bf0b-cd4d44230fd2" />
+<img width="1418" alt="Screenshot 2025-05-12 at 11 02 58" src="https://github.com/user-attachments/assets/64e4b66a-4827-49dc-837c-27f09d246ad9" />
+<img width="1418" alt="Screenshot 2025-05-12 at 11 03 25" src="https://github.com/user-attachments/assets/7af19aaa-4c64-422d-9f93-baa252951ede" />
+
 ---
 
 ##  Features & User Stories
