@@ -33,8 +33,8 @@ Below are selected screenshots that illustrate the core user flow of the ITDB Fa
 
 ```bash
 # 1 · Clone
- git clone https://github.com/ibrahim-shaban-qabaqebo/ITDB-Fact-Sheet-Analyzer.git
-cd itdb_fact_sheet_analyzer
+git clone https://github.com/ibrahim-shaban-qabaqebo/ITDB-Fact-Sheet-Analyzer.git
+cd ITDB-Fact-Sheet-Analyzer
 
 # 2 · Python ≥ 3.9 virtual env
 python -m venv .venv

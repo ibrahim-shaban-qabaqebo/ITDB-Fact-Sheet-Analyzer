@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
 import pandas as pd
-from io import StringIO
 import base64
 from openai import AzureOpenAI
 from extractors.json_extractor import extract_json
