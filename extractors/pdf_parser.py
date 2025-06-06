@@ -11,8 +11,8 @@ Both functions are *pure* (no global state) so they’re easy to unit‑test.
 
 Best‑practice highlights
 ------------------------
-* **Lazy dependencies** – import heavy packages (`fitz`, `langchain_*`) at
-  module top‑level so cold‑starts in Streamlit remain fast.
+* **Lazy dependencies** – import heavy packages (`fitz`, `langchain_*`) inside
+  the functions so Streamlit cold‑starts remain fast.
 * **Chunking before embedding** – `RecursiveCharacterTextSplitter` with a
   modest overlap (20 % by default) retains context and prevents the embeddings
   model from truncating long passages.
@@ -24,14 +24,12 @@ Best‑practice highlights
 
 from __future__ import annotations
 
-from typing import List, Tuple
+from typing import List, Tuple, TYPE_CHECKING
 
-import fitz  # PyMuPDF
-
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.docstore.document import Document
-from langchain.vectorstores.faiss import FAISS
-from langchain_openai import AzureOpenAIEmbeddings
+if TYPE_CHECKING:  # pragma: no cover - hints only
+    from langchain.docstore.document import Document
+    from langchain.vectorstores.faiss import FAISS
+    from langchain_openai import AzureOpenAIEmbeddings
 
 
 # --------------------------------------------------------------------------- #
@@ -55,6 +53,8 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
     -----
     This purposely ignores images and tables—LLMs cope fine with raw text.
     """
+    import fitz  # PyMuPDF
+
     doc = fitz.open(stream=pdf_bytes, filetype="pdf")
     full_text = "\n".join(page.get_text() for page in doc)
     return full_text
@@ -65,7 +65,7 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
 # --------------------------------------------------------------------------- #
 def parse_and_embed(
     pdf_bytes: bytes,
-    embeddings_client: AzureOpenAIEmbeddings,
+    embeddings_client: "AzureOpenAIEmbeddings",
     *,
     chunk_size: int = 1200,
     chunk_overlap: int = 240,
@@ -96,6 +96,10 @@ def parse_and_embed(
         Either a FAISS vector store with `.as_retriever(...)` support **or**
         a list of ``(Document, embedding)`` tuples.
     """
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from langchain.docstore.document import Document
+    from langchain.vectorstores.faiss import FAISS
+
     # 1️⃣  Extract and split ---------------------------------------------------
     raw_text = extract_text_from_pdf(pdf_bytes)
 
