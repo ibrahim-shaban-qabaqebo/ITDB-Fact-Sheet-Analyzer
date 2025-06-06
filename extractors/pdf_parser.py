@@ -55,10 +55,10 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
     -----
     This purposely ignores images and tables—LLMs cope fine with raw text.
     """
-    with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
-        full_text = "\n".join(page.get_text() for page in doc)
-
-    return full_text
+    
+with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
+    full_text = "\n".join(page.get_text() for page in doc)
+return full_text
 
 
 # --------------------------------------------------------------------------- #
